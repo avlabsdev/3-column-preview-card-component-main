@@ -1,0 +1,119 @@
+:root {
+    font-size: 15px;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    min-height: calc(100vh - 2rem);
+    padding: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    max-width: calc(1024px - 3.25rem);
+}
+
+.flex-item {
+    padding: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.flex-item:nth-of-type(1) {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: .5rem 0 0 .5rem;
+}
+
+.flex-item:nth-of-type(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.flex-item:nth-of-type(3) {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 .5rem .5rem 0;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 10rem;
+    text-align: center;
+    margin-right: auto;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.flex-item:nth-of-type(1) .btn {
+    color: hsl(31, 77%, 52%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.flex-item:nth-of-type(2) .btn {
+    color: hsl(184, 100%, 22%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.flex-item:nth-of-type(3) .btn {
+    color: hsl(179, 100%, 13%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.btn:hover {
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: transparent;
+    color: hsl(0, 0%, 95%) !important;
+}
+
+footer {
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+footer a {
+    font-weight: 700;
+    color: hsl(184, 100%, 22%);
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        flex-direction: column;
+    }
+
+    .flex-item:nth-of-type(1) {
+        background-color: hsl(31, 77%, 52%);
+        border-radius: .5rem .5rem 0 0;
+    }
+
+    .flex-item:nth-of-type(3) {
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0 .5rem .5rem;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}
